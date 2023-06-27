@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MappingController {
+    // Annotation에 속성값이 있다.
     private Logger log = LoggerFactory.getLogger(getClass());
 
     // GET, POST, DELETE 등 모두 다 받음
