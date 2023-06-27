@@ -34,6 +34,7 @@ public class FrontControllerServletV2 extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
+        // Jsp 는 Model을 request.setAttribute 해줘야 한다. : 현재는 controller에서 해주는 중
         MyView view = controller.process(request, response);
         view.render(request, response);
     }
