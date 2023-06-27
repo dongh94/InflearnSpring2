@@ -44,7 +44,8 @@ public class RequestBodyStringController {
         log.info("message Body = {}", messageBody);
         return new HttpEntity<>("ok");
     }
-
+    // RequestBody ( messageBody ), ResponseBody
+    // @RequestParam, ModelAttribute 와는 전혀 상관 없다.
     @ResponseBody
     @PostMapping("/request-body-string-v4")
     public String requestBodyStringV4(@RequestBody String messageBody) throws IOException {
